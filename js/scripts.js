@@ -20,17 +20,40 @@ $(document).ready(function() {
       $("#track-intro").hide();
     }
 
-    if ((size === "Startup" || size === "Small Company") && track === "Back-end is my jam!") {
+    if (size === "Smaller or startup company" && track === "Back-end is my jam!") {
       $("#track-ruby").show();
+      $("#track-php").show();
+      $("#track-webdev").hide();
+      $("#track-java").hide();
+      $("#track-csharp").hide()
+      $("#more-info").hide();
+    } else if (size === "Large company" && track === "Back-end is my jam!") {
+      $("#track-ruby").hide();
+      $("#track-php").show();
+      $("#track-webdev").hide();
+      $("#track-java").show();
+      $("#track-csharp").show();
+      $("#more-info").hide();
+
+
+
     } else if (track === "Front-end all the way!"){
       $("#track-webdev").show();
       $("#track-ruby").hide();
+      $("#track-php").hide();
+      $("#track-java").hide();
+      $("#track-csharp").hide()
+      $("#more-info").hide();
     } else if (track === "How about a combination!") {
       $("#track-ruby").show();
       $("#track-webdev").hide();
+      $("#more-info").hide();
     } else if (track === "Back-end is my jam!" && (size === "(select one)") || build === "(select one)") {
       $("#track-ruby").hide();
       $("#track-webdev").hide();
+      $("#track-php").hide();
+      $("#track-java").hide();
+      $("#track-csharp").hide();
       $("#more-info").show();
     } else if (track === "Back-end is my jam!" && (size !== "(select one)" || build !== "(select one)")) {
       $("#track-ruby").hide();
