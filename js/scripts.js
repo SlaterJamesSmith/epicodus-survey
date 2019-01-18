@@ -19,10 +19,24 @@ $(document).ready(function() {
     } else {
       $("#track-intro").hide();
     }
+
     if (track === "Front-end all the way!"){
       $("#track-webdev").show();
+      $("#track-ruby").hide();
     } else if (track === "How about a combination!") {
       $("#track-ruby").show();
+      $("#track-webdev").hide();
+    } else if (track === "Back-end is my jam!" && size === "(select one)") {
+      $("#track-ruby").hide();
+      $("#track-webdev").hide();
+      $("#more-info").show();
+    } else if (track === "Back-end is my jam!" && size !== "(select one)") {
+      $("#track-ruby").hide();
+      $("#track-webdev").hide();
+      $("#more-info").hide();
+    } else {
+      $("#track-webdev").hide();
+      $("#track-ruby").hide();
     }
 
 

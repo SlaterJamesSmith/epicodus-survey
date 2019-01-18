@@ -21,3 +21,8 @@
 #track-csharp {
   display: none;
 }
+
+#more-info {
+  display: none;
+  color: red;
+}
