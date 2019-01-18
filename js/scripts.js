@@ -99,11 +99,11 @@ $(document).ready(function() {
     $("#track-ruby").hide();
   }
 
-  if (interest === "Beautiful content or user engagement" && size !== "(select one)") {
+  if (interest === "Beautiful content or user engagement" && size !== "(select one)" && track !== "(select one)" || interest === "Beautiful content or user engagement" && track === "How about a combination!") {
     $("#track-webdev").show();
-  } else if (interest === "Internal sofware for big businesses" && size !== "(select one)") {
+  } else if (interest === "Internal sofware for big businesses" && size !== "(select one)" && track !== "(select one)" || interest === "Internal sofware for big businesses" && track === "How about a combination!") {
     $("#track-csharp").show();
-  } else if (interest === "Databases or content managment" && size !== "(select one)") {
+  } else if (interest === "Databases or content managment" && size !== "(select one)" && track !== "(select one)" || interest === "Databases or content managment" && track === "How about a combination!") {
     $("#track-php").show();
   }
 
