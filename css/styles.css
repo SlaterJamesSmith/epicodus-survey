@@ -2,21 +2,22 @@
   display: none;
 }
 
-
-
 #track-webdev {
   display: none;
 }
 
-
-#track-one {
+#track-ruby {
   display: none;
 }
 
-#track-two {
+#track-php {
   display: none;
 }
 
-#track-three {
+#track-java {
+  display: none;
+}
+
+#track-csharp {
   display: none;
 }
