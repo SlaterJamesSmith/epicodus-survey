@@ -14,55 +14,88 @@ $(document).ready(function() {
     console.log(interest);
 
 
-    if (intro === "No"){
-      $("#track-intro").show();
-    } else {
-      $("#track-intro").hide();
-    }
-
-    if (size === "Smaller or startup company" && track === "Back-end is my jam!") {
-      $("#track-ruby").show();
-      $("#track-php").show();
-      $("#track-webdev").hide();
-      $("#track-java").hide();
-      $("#track-csharp").hide()
-      $("#more-info").hide();
-    } else if (size === "Large company" && track === "Back-end is my jam!") {
-      $("#track-ruby").hide();
-      $("#track-php").show();
-      $("#track-webdev").hide();
-      $("#track-java").show();
-      $("#track-csharp").show();
-      $("#more-info").hide();
+  if (intro === "No"){
+    $("#track-intro").show();
+  } else {
+    $("#track-intro").hide();
+  }
 
 
-
-    } else if (track === "Front-end all the way!"){
-      $("#track-webdev").show();
-      $("#track-ruby").hide();
-      $("#track-php").hide();
-      $("#track-java").hide();
-      $("#track-csharp").hide()
-      $("#more-info").hide();
-    } else if (track === "How about a combination!") {
-      $("#track-ruby").show();
-      $("#track-webdev").hide();
-      $("#more-info").hide();
-    } else if (track === "Back-end is my jam!" && (size === "(select one)") || build === "(select one)") {
-      $("#track-ruby").hide();
-      $("#track-webdev").hide();
-      $("#track-php").hide();
-      $("#track-java").hide();
-      $("#track-csharp").hide();
-      $("#more-info").show();
-    } else if (track === "Back-end is my jam!" && (size !== "(select one)" || build !== "(select one)")) {
-      $("#track-ruby").hide();
-      $("#track-webdev").hide();
-      $("#more-info").hide();
-    } else {
-      $("#track-webdev").hide();
-      $("#track-ruby").hide();
-    }
+  if (build === "A TON of small, connected sites" && size === "Smaller or startup company" && track === "Back-end is my jam!") {
+    $("#track-ruby").hide();
+    $("#track-php").show();
+    $("#track-webdev").hide();
+    $("#track-java").hide();
+    $("#track-csharp").hide()
+    $("#more-info").hide();
+  } else if (build === "Interactive web or phone apps" && size === "Smaller or startup company" && track === "Back-end is my jam!") {
+    $("#track-ruby").show();
+    $("#track-php").hide();
+    $("#track-webdev").hide();
+    $("#track-java").hide();
+    $("#track-csharp").hide()
+    $("#more-info").hide();
+  } else if (build === "A TON of small, connected sites" && size === "Large company" && track === "Back-end is my jam!") {
+    $("#track-ruby").hide();
+    $("#track-php").show();
+    $("#track-webdev").hide();
+    $("#track-java").hide();
+    $("#track-csharp").hide()
+    $("#more-info").hide();
+  } else if (build === "Interactive web or phone apps" && size === "Large company" && track === "Back-end is my jam!") {
+    $("#track-ruby").hide();
+    $("#track-php").hide();
+    $("#track-webdev").hide();
+    $("#track-java").show();
+    $("#track-csharp").hide()
+    $("#more-info").hide();
+  } else if (build === "Business software" && size === "Large company" && track === "Back-end is my jam!") {
+    $("#track-ruby").hide();
+    $("#track-php").hide();
+    $("#track-webdev").hide();
+    $("#track-java").hide();
+    $("#track-csharp").show()
+    $("#more-info").hide();
+  } else if (size === "Smaller or startup company" && track === "Back-end is my jam!") {
+    $("#track-ruby").show();
+    $("#track-php").show();
+    $("#track-webdev").hide();
+    $("#track-java").hide();
+    $("#track-csharp").hide()
+    $("#more-info").hide();
+  } else if (size === "Large company" && track === "Back-end is my jam!") {
+    $("#track-ruby").hide();
+    $("#track-php").show();
+    $("#track-webdev").hide();
+    $("#track-java").show();
+    $("#track-csharp").show();
+    $("#more-info").hide();
+  } else if (track === "Front-end all the way!"){
+    $("#track-webdev").show();
+    $("#track-ruby").hide();
+    $("#track-php").hide();
+    $("#track-java").hide();
+    $("#track-csharp").hide()
+    $("#more-info").hide();
+  } else if (track === "How about a combination!") {
+    $("#track-ruby").show();
+    $("#track-webdev").hide();
+    $("#more-info").hide();
+  } else if (track === "Back-end is my jam!" && (size === "(select one)") || build === "(select one)") {
+    $("#track-ruby").hide();
+    $("#track-webdev").hide();
+    $("#track-php").hide();
+    $("#track-java").hide();
+    $("#track-csharp").hide();
+    $("#more-info").show();
+  } else if (track === "Back-end is my jam!" && (size !== "(select one)" || build !== "(select one)")) {
+    $("#track-ruby").hide();
+    $("#track-webdev").hide();
+    $("#more-info").hide();
+  } else {
+    $("#track-webdev").hide();
+    $("#track-ruby").hide();
+  }
 
 
 
