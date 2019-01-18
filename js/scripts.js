@@ -20,17 +20,19 @@ $(document).ready(function() {
       $("#track-intro").hide();
     }
 
-    if (track === "Front-end all the way!"){
+    if ((size === "Startup" || size === "Small Company") && track === "Back-end is my jam!") {
+      $("#track-ruby").show();
+    } else if (track === "Front-end all the way!"){
       $("#track-webdev").show();
       $("#track-ruby").hide();
     } else if (track === "How about a combination!") {
       $("#track-ruby").show();
       $("#track-webdev").hide();
-    } else if (track === "Back-end is my jam!" && size === "(select one)") {
+    } else if (track === "Back-end is my jam!" && (size === "(select one)") || build === "(select one)") {
       $("#track-ruby").hide();
       $("#track-webdev").hide();
       $("#more-info").show();
-    } else if (track === "Back-end is my jam!" && size !== "(select one)") {
+    } else if (track === "Back-end is my jam!" && (size !== "(select one)" || build !== "(select one)")) {
       $("#track-ruby").hide();
       $("#track-webdev").hide();
       $("#more-info").hide();
@@ -38,6 +40,10 @@ $(document).ready(function() {
       $("#track-webdev").hide();
       $("#track-ruby").hide();
     }
+
+
+
+
 
 
   });
