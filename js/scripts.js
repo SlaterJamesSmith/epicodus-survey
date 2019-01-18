@@ -20,7 +20,6 @@ $(document).ready(function() {
     $("#track-intro").hide();
   }
 
-
   if (build === "A TON of small, connected sites" && size === "Smaller or startup company" && track === "Back-end is my jam!") {
     $("#track-ruby").hide();
     $("#track-php").show();
@@ -80,6 +79,9 @@ $(document).ready(function() {
   } else if (track === "How about a combination!") {
     $("#track-ruby").show();
     $("#track-webdev").hide();
+    $("#track-php").hide();
+    $("#track-java").hide();
+    $("#track-csharp").hide();
     $("#more-info").hide();
   } else if (track === "Back-end is my jam!" && (size === "(select one)") || build === "(select one)") {
     $("#track-ruby").hide();
@@ -97,7 +99,13 @@ $(document).ready(function() {
     $("#track-ruby").hide();
   }
 
-
+  if (interest === "Beautiful content or user engagement" && size !== "(select one)") {
+    $("#track-webdev").show();
+  } else if (interest === "Internal sofware for big businesses" && size !== "(select one)") {
+    $("#track-csharp").show();
+  } else if (interest === "Databases or content managment" && size !== "(select one)") {
+    $("#track-php").show();
+  }
 
 
 
