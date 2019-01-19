@@ -1,3 +1,7 @@
+#tracks {
+  padding-top: 50px;
+}
+
 #track-intro {
   display: none;
   color: green;
@@ -5,25 +9,40 @@
 
 #track-webdev {
   display: none;
+  padding-bottom: 30px;
 }
 
 #track-ruby {
   display: none;
+  padding-bottom: 30px;
 }
 
 #track-php {
   display: none;
+  padding-bottom: 30px;
 }
 
 #track-java {
   display: none;
+  padding-bottom: 30px;
 }
 
 #track-csharp {
   display: none;
+  padding-bottom: 30px;
 }
 
 #more-info {
   display: none;
   color: red;
+}
+
+form {
+  padding-top: 30px;
+}
+
+img {
+  float: left;
+  max-width: 100px;
+  padding-right: 20px;
 }

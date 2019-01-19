@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="css/animate.css" text="text/css">
     <link rel="stylesheet" href="css/bootstrap.css" text="text/css">
     <link rel="stylesheet" href="css/styles.css" text="text/css">
     <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
@@ -10,100 +11,93 @@
   <body>
     <div class="container">
       <h1>Which Epicodus Track is Right for You?</h1>
-
-      <form id="survey">
-        <div>
-          <p><label for="intro-class">Have you taken "Intro to Programming" yet?</label>
-            <select class="form-control" id="intro-class">
-              <option>(select one)</option>
-              <option>Yes</option>
-              <option>No</option>
-            </select></p>
+      <div class="row">
+        <div class="col-sm-4">
+          <form id="survey">
+          <div>
+            <p><label for="intro-class">Have you taken "Intro to Programming" yet?</label>
+              <select class="form-control" id="intro-class">
+                <option>(select one)</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select></p>
+          </div>
+          <div>
+            <p><label for="front-back-end">Front-end or Back-end?</label>
+              <select class="form-control" id="front-back-end">
+                <option>(select one)</option>
+                <option>Front-end all the way!</option>
+                <option>Back-end is my jam!</option>
+                <option>How about a combination!</option>
+              </select></p>
+          </div>
+          <div>
+            <p><label for="company-size">What size of company do you want to work for?</label>
+              <select class="form-control" id="company-size">
+                <option>(select one)</option>
+                <option>Smaller or startup company</option>
+                <option>Large company</option>
+              </select></p>
+          </div>
+          <div>
+            <p><label for="building">I can see myself building:</label>
+              <select class="form-control" id="building">
+                <option>(select one)</option>
+                <option>Business software</option>
+                <option>Interactive web or phone apps</option>
+                <option>A TON of small, connected sites</option>
+                <option>I don't know yet!</option>
+              </select></p>
+          </div>
+          <div>
+            <p><label for="interested">I'm most interested in:</label>
+              <select class="form-control" id="interested">
+                <option>(select one)</option>
+                <option>Databases or content managment</option>
+                <option>Internal sofware for big businesses</option>
+                <option>Beautiful content or user engagement</option>
+                <option>I don't know yet!</option>
+              </select></p>
+          </div>
+          <button type="submit" name="button">Submit!</button>
+          </form>
         </div>
-        <div>
-          <p><label for="front-back-end">Front-end or Back-end?</label>
-            <select class="form-control" id="front-back-end">
-              <option>(select one)</option>
-              <option>Front-end all the way!</option>
-              <option>Back-end is my jam!</option>
-              <option>How about a combination!</option>
-            </select></p>
+        <div class="col-sm-8">
+          <div id="tracks">
+            <div id="track-intro">
+              <p>Note: You should consider taking Epicodus' "Intro to Programming" course! It's five weeks of intensive free learning, perfect for new coders. Enrolling is a great way of testing the waters to help you choose the right track for you.</p>
+            </div>
+            <div id="track-webdev">
+              <img src="img/js.png" alt="ruby logo">
+              <h4>Front End Development</h4>
+              <p>You should consider in the Front End Development Track!</p>
+            </div>
+            <div id="track-ruby">
+              <img src="img/react.png" alt="ruby logo">
+              <h4>Ruby / Rails</h4>
+              <p>You should consider in the Ruby/Rails track!</p>
+            </div>
+            <div id="track-php">
+              <img src="img/php-bordered-turquoise.png" alt="php logo">
+              <h4>PHP / Drupal</h4>
+              <p>You should consider the PHP/Drupal track!</p>
+            </div>
+            <div id="track-java">
+              <img src="img/java-bordered-turquoise.png" alt="java logo">
+              <h4>Java / Android</h4>
+              <p>You should consider the Java/Android track!</p>
+            </div>
+            <div id="track-csharp">
+              <img src="img/c-sharp.png" alt="c-sharp logo">
+              <h4>C# / .NET</h4>
+              <p>You should consider the C#/.NET track!</p>
+            </div>
+            <div id="more-info">
+              <p>You haven't provided enough information for us to make a recommendation! Please keep filling out the form. </p>
+            </div>
+          </div>
         </div>
-        <div>
-          <p><label for="company-size">What size of company do you want to work for?</label>
-            <select class="form-control" id="company-size">
-              <option>(select one)</option>
-              <option>Smaller or startup company</option>
-              <option>Large company</option>
-            </select></p>
-        </div>
-        <div>
-          <p><label for="building">I can see myself building:</label>
-            <select class="form-control" id="building">
-              <option>(select one)</option>
-              <option>Business software</option>
-              <option>Interactive web or phone apps</option>
-              <option>A TON of small, connected sites</option>
-              <option>I don't know yet!</option>
-            </select></p>
-        </div>
-        <div>
-          <p><label for="interested">I'm most interested in:</label>
-            <select class="form-control" id="interested">
-              <option>(select one)</option>
-              <option>Databases or content managment</option>
-              <option>Internal sofware for big businesses</option>
-              <option>Beautiful content or user engagement</option>
-              <option>I don't know yet!</option>
-            </select></p>
-        </div>
-        <button type="submit" name="button">Submit!</button>
-      </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <div id="track-intro">
-        <p>Note: You should consider taking Epicodus' "Intro to Programming" course! It's five weeks of intensive free learning, perfect for new coders. Enrolling is a great way of testing the waters to help you choose the right track for you.</p>
       </div>
-
-      <div id="track-webdev">
-        <p>You should consider in the Front End Development Track!</p>
-      </div>
-
-      <div id="track-ruby">
-        <p>You should consider in the Ruby/Rails track!</p>
-      </div>
-
-      <div id="track-php">
-        <p>You should consider the PHP/Drupal track!</p>
-      </div>
-
-      <div id="track-java">
-        <p>You should consider the Java/Android track!</p>
-      </div>
-
-      <div id="track-csharp">
-        <p>You should consider the C#/.NET track!</p>
-      </div>
-
-      <div id="more-info">
-        <p>You haven't provided enough information for us to make a recommendation! Please keep filling out the form. </p>
-      </div>
-
     </div>
 
 
